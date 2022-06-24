@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <script>
+        while (true) {
+            let choice
+            choice = prompt("Calculator\n\nSelect a choice\n1.Addition\n2.Subtraction\n3.Multiplication\n4.Division\n5.Exit");
+
+            while(choice > 5 || choice < 1){
+                choice = prompt("Ooooops....Invalid Input entered\n\nSelect a choice\n1.Addition\n2.Subtraction\n3.Multiplication\n4.Division\n5.Exit");
+            }
+
+            if(choice == 1){
+               var num1 = parseInt(prompt('Performing Opertion Addition\n\nEnter the first number'))
+               var num2 = parseInt(prompt('Enter the second number'))
+
+               var result = num1 + num2
+               prompt(`${num1} + ${num2} = ${result}`)
+            } else if(choice == 2){
+                var num1 = prompt('Performing Opertion Subtraction\n\nEnter the first number')
+                var num2 = prompt('Enter the second number')
+
+                var result = num1 - num2
+                prompt(`${num1} - ${num2} = ${result}`)
+            } else if(choice == 3){
+                var num1 = prompt('Performing Opertion Multiplication\n\nEnter the first number')
+                var num2 = prompt('Enter the second number')
+
+                var result = num1 * num2
+                prompt(`${num1} * ${num2} = ${result}`)
+            } else if(choice == 4){
+                var num1 = prompt('Performing Opertion Division\n\nEnter the first number')
+                var num2 = prompt('Enter the second number')
+
+                var result = num1 / num2
+                prompt(`${num1} / ${num2} = ${result}`)
+            }
+            else{
+                break
+            }
+      }
+    </script>
+  </body>
+</html>
